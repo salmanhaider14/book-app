@@ -74,11 +74,13 @@ body {
 }
 
 .details {
-  /* background-color: whitesmoke; */
+  width: 100%;
   min-height: 100vh;
   background-image: url("/bg.jpg");
   background-size: cover;
   font-family: "Space Grotesk", sans-serif;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .basic-data {
@@ -202,5 +204,11 @@ body {
 @media all and (max-width: 700px) {
   .searchbox {
     width: 350px;
+  }
+  .book-info p {
+    font-size: 18px;
+  }
+  .desc p {
+    font-size: 20px;
   }
 }
