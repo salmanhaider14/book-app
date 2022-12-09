@@ -38,18 +38,17 @@ export default function Home() {
       />
 
       <div>{searchValue && <BooksList books={books} />}</div>
-      <footer>
-        <div className="footer-container">
-          <div className="social">
-            <FaFacebook className="icon" />
-            <FaInstagram className="icon" />
-            <FaTwitter className="icon" />
-            <FaYoutube className="icon" />
-          </div>
 
-          <h1>Copyright @ 2022 Salman Haider</h1>
+      <div className="footer-container">
+        <div className="social">
+          <FaFacebook className="icon" />
+          <FaInstagram className="icon" />
+          <FaTwitter className="icon" />
+          <FaYoutube className="icon" />
         </div>
-      </footer>
+
+        <h1>Copyright @ 2022 Salman Haider</h1>
+      </div>
     </div>
   );
 }
