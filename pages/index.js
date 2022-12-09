@@ -2,19 +2,9 @@ import Head from "next/head";
 import BooksList from "../components/BooksList";
 import React, { useState, useEffect } from "react";
 import { useStateContext } from "../components/StateContext";
-import {FaFacebook, FaInstagram, FaYoutube, FaTwitter} from 'react-icons/fa'
-
-// export const getStaticProps = async () => {
-//   const res = await fetch("https://www.googleapis.com/books/v1/volumes?q=dark");
-//   const data = await res.json();
-
-//   return {
-//     props: { data },
-//   };
-// };
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 
 export default function Home() {
-  // const [searchValue, setSearchValue] = useState("dark");
   const { searchValue, setSearchValue } = useStateContext();
   const [books, setBooks] = useState([]);
 
@@ -38,30 +28,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className="heading">Books Forest</h1>
-      <div className="searchbox">
-        <input
-          type="text"
-          placeholder="Search any book....."
-          onChange={(e) => setSearchValue(e.target.value)}
-          value={searchValue}
-        />
-      </div>
+
+      <input
+        className="searchbox"
+        type="text"
+        placeholder="Search any book....."
+        onChange={(e) => setSearchValue(e.target.value)}
+        value={searchValue}
+      />
 
       <div>{searchValue && <BooksList books={books} />}</div>
       <footer>
-      
-      
-      <div className="footer-container">
-        <div className="social">
-          <FaFacebook className="icon" />
-          <FaInstagram className="icon" />
-          <FaTwitter className="icon" />
-          <FaYoutube className="icon" />
+        <div className="footer-container">
+          <div className="social">
+            <FaFacebook className="icon" />
+            <FaInstagram className="icon" />
+            <FaTwitter className="icon" />
+            <FaYoutube className="icon" />
+          </div>
+
+          <h1>Copyright @ 2022 Salman Haider</h1>
         </div>
-        
-        <h1>Copyright @ 2022 Salman Haider</h1>
-      </div>
-    
       </footer>
     </div>
   );

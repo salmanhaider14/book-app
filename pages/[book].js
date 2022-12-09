@@ -53,10 +53,9 @@ const DetailsPage = () => {
             Pages : {book.volumeInfo && book.volumeInfo.pageCount}
           </p>
           <button>
-            {" "}
-            <Link href="/" style={{ textDecoration: "none", color: "white" }}>
-              Go Back
-            </Link>{" "}
+            <Link href="/" className="link">
+              <a style={{ textDecoration: "none", color: "white" }}>Go Back</a>
+            </Link>
           </button>
         </div>
       </div>
