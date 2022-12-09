@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Link from "next/link";
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
+import Image from "next/image";
 
 const DetailsPage = () => {
   const { query } = useRouter();
@@ -52,9 +54,9 @@ const DetailsPage = () => {
           </p>
           <button>
             {" "}
-            <a href="/" style={{ textDecoration: "none", color: "white" }}>
+            <Link href="/" style={{ textDecoration: "none", color: "white" }}>
               Go Back
-            </a>{" "}
+            </Link>{" "}
           </button>
         </div>
       </div>
