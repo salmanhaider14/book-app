@@ -6,6 +6,7 @@
 body {
   background-color: rgb(238, 241, 255, 0.7);
   font-family: "Space Grotesk", sans-serif;
+  overflow-x: hidden;
 }
 * {
   margin: 0;
