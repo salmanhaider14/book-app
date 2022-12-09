@@ -121,16 +121,20 @@ body {
 }
 
 .desc {
-  width: 60%;
+  /* width: 60%;
   max-height: 350px;
-
   margin-left: 20%;
-
-  overflow-y: auto;
+  overflow-y: auto; */
   font-family: "Fredoka", sans-serif;
   margin-top: 3rem;
+  text-align: start;
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
 }
-
+.desc h1 {
+  text-align: center;
+}
 .desc p {
   font-family: "Fredoka", sans-serif;
   font-size: 25px;
