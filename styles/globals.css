@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+body {
+  background-color: rgb(238, 241, 255, 0.7);
+  font-family: "Space Grotesk", sans-serif;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-top: 10px;
+  text-align: center;
+
+  font-size: 40px;
+  font-weight: bold;
+}
+.searchbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.searchbox input {
+  width: 30%;
+  height: 60px;
+  border-radius: 8px;
+  border: 0.5px lightgrey solid;
+  padding: 7px;
+  font-size: 15px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+}
+
+.book {
+  color: #141414;
+  width: 250px;
+  height: 350px;
+  margin: 10px;
+  position: relative;
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s;
+  padding: 7px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.book:hover {
+  transform: translateY(-10px);
+}
+.book img {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+.book h1 {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  padding-top: 10px;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  color: white;
+  justify-content: center;
+  padding: 25px;
+  margin-top: 7rem;
+  /* max-height: 80vh; */
+}
+.details {
+  /* background-color: whitesmoke; */
+  min-height: 100vh;
+  background-image: url("/bg.jpg");
+  background-size: cover;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.basic-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.basic-data img {
+  margin: 10rem;
+  box-shadow: 1rem 0px 8px rgba(8, 99, 151, 0.5);
+}
+.book-info {
+  display: flex;
+  flex-direction: column;
+  font-family: "Fredoka", sans-serif;
+}
+.book-info button {
+  width: 120px;
+  height: 40px;
+  margin: 20px;
+  background-color: #25316d;
+  border: none;
+  color: #dadada;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.book-info button:hover {
+  background-color: grey;
+}
+.book-info p {
+  font-size: 28px;
+  padding: 2px;
+  text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.desc {
+  width: 60%;
+  max-height: 350px;
+
+  margin-left: 20%;
+
+  overflow-y: auto;
+  font-family: "Fredoka", sans-serif;
+  margin-top: 3rem;
+}
+
+.desc p {
+  font-family: "Fredoka", sans-serif;
+  font-size: 25px;
+  padding-top: 1rem;
+}
+
+.detail-content {
+  height: 100vh;
+  width: 100%;
+  box-shadow: 0px 5px 20px rgb(71, 71, 71);
+}
+footer {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+.heading {
+  font-family: "Fredoka", sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer-container {
+  background-color: #25316d;
+  margin-top: 10%;
+  padding: 2rem;
+  font-family: "Quicksand", sans-serif;
+}
+.social {
+  text-align: center;
+  padding: 10px;
+  font-size: 45px;
+  color: white;
+}
+.icon {
+  margin: 15px;
+  cursor: pointer;
+}
+.icon:hover {
+  color: #9cb4cc;
+  transform: scale(1.1);
+}
+.footer-container ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Belleza", sans-serif;
+}
+.footer-container li {
+  margin: 20px;
+}
+.footer-container li a {
+  text-decoration: none;
+  color: #dadada;
+  font-size: 25px;
+}
+.footer-container li a:hover {
+  color: #9cb4cc;
+}
+.footer-container h1 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
