@@ -37,7 +37,9 @@ export default function Home() {
         value={searchValue}
       />
 
-      <div>{searchValue && <BooksList books={books} />}</div>
+      <div className="books-container">
+        {searchValue && <BooksList books={books} />}
+      </div>
 
       <div className="footer-container">
         <div className="social">
