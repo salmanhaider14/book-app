@@ -2,11 +2,24 @@ import Head from "next/head";
 import BooksList from "../components/BooksList";
 import React, { useState, useEffect } from "react";
 import { useStateContext } from "../components/StateContext";
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaYoutube,
+  FaTwitter,
+  FaSearch,
+} from "react-icons/fa";
 
 export default function Home() {
   const { searchValue, setSearchValue } = useStateContext();
   const [books, setBooks] = useState([]);
+  // Add a state to track if the search button is clicked
+  const [isSearchClicked, setIsSearchClicked] = useState(false);
+
+  // Add a click event handler for the search button
+  const handleSearchClick = () => {
+    setIsSearchClicked(true);
+  };
 
   const getBooks = async (searchValue) => {
     const res = await fetch(
@@ -17,8 +30,11 @@ export default function Home() {
   };
 
   useEffect(() => {
-    getBooks(searchValue);
-  }, [searchValue]);
+    if (isSearchClicked) {
+      getBooks(searchValue);
+      setIsSearchClicked(false);
+    }
+  }, [isSearchClicked]);
 
   return (
     <div className="header">
@@ -29,16 +45,25 @@ export default function Home() {
       </Head>
       <h1 className="heading">Books Forest</h1>
 
-      <input
-        className="searchbox"
-        type="text"
-        placeholder="Search any book....."
-        onChange={(e) => setSearchValue(e.target.value)}
-        value={searchValue}
-      />
+      <div className="form">
+        <input
+          className="searchbox"
+          type="text"
+          placeholder="Search any book....."
+          onChange={(e) => setSearchValue(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              setIsSearchClicked(true);
+            }
+          }}
+        />
+        <button onClick={handleSearchClick} className="btn">
+          <FaSearch fontSize={25} color="#25316d" />
+        </button>
+      </div>
 
       <div className="books-container">
-        {searchValue && <BooksList books={books} />}
+        <BooksList books={books} />
       </div>
 
       <div className="footer-container">

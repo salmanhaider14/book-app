@@ -39,18 +39,24 @@ const DetailsPage = () => {
         </div>
 
         <div className="book-info">
-          <p>{book.volumeInfo && book.volumeInfo.title}</p>
+          <p style={{ fontWeight: "bold" }}>
+            {book.volumeInfo && book.volumeInfo.title}
+          </p>
           <p className="publisher">
-            Publisher by {book.volumeInfo && book.volumeInfo.publisher}
+            <span style={{ fontWeight: "bold" }}>Published By:</span>{" "}
+            {book.volumeInfo && book.volumeInfo.publisher}
           </p>
           <p className="publisherdate">
-            Released on {book.volumeInfo && book.volumeInfo.publishedDate}
+            <span style={{ fontWeight: "bold" }}>Released On:</span>{" "}
+            {book.volumeInfo && book.volumeInfo.publishedDate}
           </p>
           <p className="author">
-            Author : {book.volumeInfo && book.volumeInfo.authors[0]}
+            <span style={{ fontWeight: "bold" }}>Author:</span>{" "}
+            {book.volumeInfo && book.volumeInfo.authors[0]}
           </p>
           <p className="pages">
-            Pages : {book.volumeInfo && book.volumeInfo.pageCount}
+            <span style={{ fontWeight: "bold" }}>Pages:</span>{" "}
+            {book.volumeInfo && book.volumeInfo.pageCount}
           </p>
           <button>
             <Link href="/" className="link">
