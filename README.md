@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Books Forest - Next.js Book Search App
 
-## Getting Started
+Welcome to Books Forest, a Next.js application that leverages Google's Books API to provide users with a convenient way to search for books and explore detailed information about each book. With a user-friendly interface, users can search for any book, view relevant results, and access key details such as the author, published date, pages, and a concise summary.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Search Functionality](#search-functionality)
+- [Book Details](#book-details)
+- [Contribution](#contribution)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Books Forest is a Next.js application designed to make book exploration easy and enjoyable. By integrating Google's Books API, the app provides users with a vast library of books that can be searched, explored, and examined in detail.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **Book Search:**
+  - Search for any book using the search bar.
 
-## Learn More
+- **Book Listing:**
+  - View relevant results based on the search query.
 
-To learn more about Next.js, take a look at the following resources:
+- **Book Details:**
+  - Explore detailed information about each book, including author, published date, pages, and a concise summary.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Books Forest is built using the following technologies:
 
-## Deploy on Vercel
+- **Next.js:** A React framework for building modern web applications.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Search Functionality
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Book Search:**
+   - Users can search for any book using the search bar.
+   - Relevant book results will be displayed based on the search query.
+
+## Book Details
+
+1. **Detailed Information:**
+   - Clicking on a book displays detailed information, including the author, published date, pages, and a concise summary/overview.
+
+## Contribution
+
+Contributions are welcome! If you have ideas for improvements, new features, or bug reports, please open an issue or submit a pull request. Refer to the [Contribution Guidelines](CONTRIBUTING.md) for more details.
+
+## Contact
+
+For any inquiries or feedback, please reach out to me at salmanpatrick5@gmail.com.
